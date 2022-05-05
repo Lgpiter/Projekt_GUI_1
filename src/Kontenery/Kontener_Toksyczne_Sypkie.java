@@ -11,4 +11,9 @@ extends Kontener_Ciezki{
         this.radio_aktywne = radio_aktywne;
         this.set_typ("ToksycznySypki");
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nCzy radioaktywne " + (radio_aktywne? "tak" : "nie");
+    }
 }

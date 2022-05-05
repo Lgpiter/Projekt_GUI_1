@@ -24,6 +24,6 @@ implements Ciekle{
 
     @Override
     public String toString() {
-        return super.toString() + " Pojemnosc: " + getPojemnosc_kontenera();
+        return super.toString() + "\nPojemnosc kontenera: " + getPojemnosc_kontenera();
     }
 }

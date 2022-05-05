@@ -2,12 +2,12 @@ package Kontenery;
 
 import Menu.Nadawca;
 
-public class Kontener_Chłodniczy
+public class Kontener_chlodniczy
     extends Kontener_Ciezki
     implements Siec{
-    private double tempetarua_minimalna;
+    private final double tempetarua_minimalna;
 
-    public Kontener_Chłodniczy(double waga_kontenera, double waga_ladunku, Nadawca nadawca, double tempetarua_minimalna, int numer_certyfikatu) {
+    public Kontener_chlodniczy(double waga_kontenera, double waga_ladunku, Nadawca nadawca, double tempetarua_minimalna, int numer_certyfikatu) {
         super(waga_kontenera, waga_ladunku, nadawca,numer_certyfikatu);
         this.set_typ("Chlodniczy");
         this.tempetarua_minimalna = tempetarua_minimalna;
@@ -24,7 +24,5 @@ public class Kontener_Chłodniczy
     }
 
     @Override
-    public void podlacz_do_sieci() {
-        System.out.println("Kontener podlaczono do sieci");
-    }
+    public void podlacz_do_sieci() {}
 }
